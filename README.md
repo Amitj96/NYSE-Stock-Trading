@@ -10,7 +10,11 @@ Traders place trading orders via their brokerages. Every transaction contains th
 Business Rules
 
 •	Each public company has only one such stock, each stock has a unique stock code and specified number of shares.
+
 •	Every stock trades on one or more exchanges, but the number of trading exchanges cannot exceed 9.
+
 •	A trader owns at least one account with at least one brokerage.
+
 •	Each account has exactly one owner.
+
 •	The stocks are traded if their orders are fulfilled by some transactions.
