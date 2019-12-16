@@ -1,11 +1,3 @@
-DROP TABLE broker_exchange_deals;
-DROP TABLE account_info;
-DROP TABLE transaction_info;
-DROP TABLE stock_info;
-DROP TABLE company_info;
-DROP TABLE broker_info;
-DROP TABLE exchange;
-DROP TABLE trader_info;
 
 create table company_info
 (
@@ -189,7 +181,7 @@ from stock_info s
 group by s.stock_name
 ORDER BY No_of_exchanges;
 
-/* 2. List all Exchanges who have stock from the public company established before ìJan01,1982î */
+/* 2. List all Exchanges who have stock from the public company established before ‚ÄúJan01,1982‚Äù */
 select e.exchange_name
 from exchange e 
 inner join stock_info s on s.trade_exchange_id = e.exchange_id
